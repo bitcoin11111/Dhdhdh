@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="connect"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_connect"
+        android:shortcutShortLabel="@string/shortcut_connect"
+        android:shortcutLongLabel="@string/shortcut_connect">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.shieldvpn.app"
+            android:targetClass="com.shieldvpn.app.MainActivity"
+            android:data="shieldvpn://connect" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="disconnect"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_disconnect"
+        android:shortcutShortLabel="@string/shortcut_disconnect"
+        android:shortcutLongLabel="@string/shortcut_disconnect">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.shieldvpn.app"
+            android:targetClass="com.shieldvpn.app.MainActivity"
+            android:data="shieldvpn://disconnect" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="quick_test"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_test"
+        android:shortcutShortLabel="@string/shortcut_test"
+        android:shortcutLongLabel="@string/shortcut_test">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.shieldvpn.app"
+            android:targetClass="com.shieldvpn.app.MainActivity"
+            android:data="shieldvpn://test" />
+    </shortcut>
+</shortcuts>
